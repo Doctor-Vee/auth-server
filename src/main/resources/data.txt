@@ -16,8 +16,8 @@ INSERT INTO oauth_client_details (client_id, client_secret, web_server_redirect_
      (4,1), /* delete admin */
      (2,2),  /* read operator */
      (3,2);  /* update operator */
-insert into user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked) VALUES ('1', 'victor','{bcrypt}$2a$10$Kbv2oRBpcwjNvXEvSCBllOGn.7FfnKVtGwpo9qae4/Ycy7A.HX20y', 'victor@auth.com', '1', '1', '1', '1');
- insert into  user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked) VALUES ('2', 'kenny', '{bcrypt}$2a$10$RI2Axa2DA/viAMVLrXHYROsdj96OjKfh6mIraGg2JBddJbNlSM6E.','kenny@auth.com', '1', '1', '1', '1');
+insert into user (id, username,password, email, enabled, account_non_expired, credentials_non_expired, account_non_locked) VALUES ('1', 'victor','{bcrypt}$2a$10$Kbv2oRBpcwjNvXEvSCBllOGn.7FfnKVtGwpo9qae4/Ycy7A.HX20y', 'victor@auth.com', '1', '1', '1', '1');
+ insert into  user (id, username,password, email, enabled, account_non_expired, credentials_non_expired, account_non_locked) VALUES ('2', 'kenny', '{bcrypt}$2a$10$RI2Axa2DA/viAMVLrXHYROsdj96OjKfh6mIraGg2JBddJbNlSM6E.','kenny@auth.com', '1', '1', '1', '1');
 
 INSERT INTO ROLE_USER (ROLE_ID, USER_ID)
     VALUES
